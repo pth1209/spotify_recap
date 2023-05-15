@@ -1,0 +1,23 @@
+/* .Albums {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+  } */
+  
+  .buttonContainer {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .getAlbum {
+    background-color: rgb(30, 215, 96);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 1.2rem;
+    cursor: pointer;
+  }
+  
