@@ -1,7 +1,8 @@
 # spotify_recap
 Purpose of this repository is to get familiar with using React.
-
-## npm start
+```
+npm start
+```
 
 Runs the app in development mode on a local host.
 
