@@ -1,2 +1,4 @@
 # spotify_recap
-extract Spotify users' data
+Purpose of this repostiroy is to get familiar with using React.
+
+
