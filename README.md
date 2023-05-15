@@ -1,10 +1,11 @@
 # spotify_recap
 Purpose of this repository is to get familiar with using React.
 
-##npm start
+## npm start
+
 Runs the app in development mode on a local host.
 
-##Dependencies to install
+## Dependencies to install
 '''
 npm install react-router-dom
 npm install axios
