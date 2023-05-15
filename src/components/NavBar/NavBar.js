@@ -19,7 +19,7 @@ const NavBar = () => {
                 <Link to = "/artist">Get Top Artist</Link>
             </li>
             <li>
-                <Link to = "/albums">Get Top Albums</Link>
+                <Link to = "/albums">Get Saved Albums</Link>
             </li>
             <li>
                 <Link to = "/songs">Get Top Songs</Link>

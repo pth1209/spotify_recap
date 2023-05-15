@@ -1,17 +1,10 @@
-/* .Albums {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: 100vh;
-  } */
-  
-  .buttonContainer {
+.buttonContainer {
     display: flex;
     justify-content: center;
     margin-top: 20px;
   }
   
-  .getAlbum {
+.getAlbum {
     background-color: rgb(30, 215, 96);
     padding: 10px 20px;
     border: none;
@@ -20,4 +13,12 @@
     font-size: 1.2rem;
     cursor: pointer;
   }
+
+
+.retrieveAlbums {
+  justify-content: center;
+  font-weight: bolder;
+  display: flex;
+  margin-top: 20px;
+}
   

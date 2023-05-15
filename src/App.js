@@ -5,9 +5,11 @@ import NavBar from "./components/NavBar/NavBar";
 
 function App() {
   const CLIENT_ID = "043e7807ac214928a8c68e3ece5ebb0f"
-  const REDIRECT_URI = "http://localhost:3000"
+  const REDIRECT_URL = "http://localhost:3000"
   const AUTH_ENDPOINT = "https://accounts.spotify.com/authorize" 
-  const RESPONSE_TYPE = "token"
+  const SPACE_DELIMITER = "%20"
+  const SCOPES = ["user-library-read", "user-top-read"]
+  const SCOPES_URL_PARAM = SCOPES.join(SPACE_DELIMITER)
 
   const [token, setToken] = useState("")
 
@@ -18,7 +20,7 @@ function App() {
     if (!token && hash) {
       token = hash.substring(1).split("&").find(elem => elem.startsWith("access_token")).split("=")[1]
 
-      window.location.ash = ""
+      window.location.hash = ""
       window.localStorage.setItem("token", token)
 
     }
@@ -26,10 +28,16 @@ function App() {
 
   }, [])
 
+
+
   const logout = () => {
     setToken("")
     window.localStorage.removeItem("token")
   }
+
+  const handleLogin = () => {
+        window.location = `${AUTH_ENDPOINT}?client_id=${CLIENT_ID}&redirect_uri=${REDIRECT_URL}&scope=${SCOPES_URL_PARAM}&response_type=token&show_dialog=true`;
+      };
 
   return (
     <div className="App">
@@ -39,8 +47,7 @@ function App() {
           Welcome to Spotify Recap, where you can check your Spotify data!!!
         </h3>
           {!token ?
-            <a href={`${AUTH_ENDPOINT}?client_id=${CLIENT_ID}&redirect_uri=${REDIRECT_URI}&response_type=${RESPONSE_TYPE}`}>Login
-              to Spotify</a>
+            <button onClick = {handleLogin}>Log in to Spotify</button>
               : <button onClick={logout}>Logout</button>}
       </div>
       
@@ -49,3 +56,6 @@ function App() {
 }
 
 export default App;
+
+
+
