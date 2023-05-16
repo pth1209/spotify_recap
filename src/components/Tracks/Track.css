@@ -13,3 +13,13 @@
     font-size: 1.2rem;
     cursor: pointer;
   }
+
+  .retrieveTrack {
+    justify-content: center;
+    font-weight: bolder;
+    text-align: center;
+    display: flex;
+    margin-top: 20px;
+    flex-direction: column;
+    gap: 10px;
+  }

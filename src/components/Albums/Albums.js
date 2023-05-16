@@ -7,12 +7,12 @@ const Albums = () => {
 
   const ALBUM_ENDPOINT = "https://api.spotify.com/v1/me/albums"
 
-  const [token, setToken] = useState("");
-  const [data, setData] = useState({});
+  const [token, setToken] = useState("")
+  const [data, setData] = useState({})
 
   useEffect(() => {
     if (localStorage.getItem("token")) {
-      setToken(localStorage.getItem("token"));
+      setToken(localStorage.getItem("token"))
     }
   }, []);
 
