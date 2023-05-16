@@ -1,4 +1,4 @@
-# spotify_recap
+# Spotify Recap
 Purpose of this repository is to get familiar with using React.
 ```
 npm start
@@ -25,3 +25,7 @@ Axios is an HTTP client that is used to fetch data from Spotify APIs.
 
 Use axios to fetch data from Spotify APIs.
 Documentation on Spotify APIs can be found here: https://developer.spotify.com/documentation/web-api
+
+### Citations / Credit
+- https://www.youtube.com/watch?v=wBq3HCvYfUg
+- https://www.youtube.com/watch?v=dGFUQf5pcpk
