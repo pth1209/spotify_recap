@@ -10,7 +10,6 @@ Runs the app in development mode on a local host.
 ```
 npm install react-router-dom
 npm install axios
-
 ```
 
 React Router is a package that helps navigate and route through different pages / views in web development.
