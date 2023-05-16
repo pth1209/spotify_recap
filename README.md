@@ -15,6 +15,8 @@ npm install axios
 React Router is a package that helps navigate and route through different pages / views in web development.
 Axios is an HTTP client that is used to fetch data from Spotify APIs.
 
-## OAuth and API
+## OAuth
 
 Client ID and Client Secret will be needed to use OAuth. Those two information can be found in the Spotify Developer's Account.
+Once Spotify authenticates the app (client) using Client ID and Client Secret, user will be redirected to a page where the user can grant the app access to their Spotify account.
+Once the user gives access, Spotify generates an access token, which is used to request data from Spotify. 
