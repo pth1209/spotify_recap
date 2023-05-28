@@ -1,10 +1,13 @@
 # Spotify Recap
-Purpose of this repository is to get familiar with using React.
+
+## Environment Setup
 ```
+npm install
 npm start
 ```
-
 Runs the app in development mode on a local host.
+
+More details can be found at https://reactnative.dev/docs/environment-setup
 
 ## Dependencies to install
 ```
