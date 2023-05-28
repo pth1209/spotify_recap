@@ -16,6 +16,7 @@ npm install axios
 ```
 
 React Router is a package that helps navigate and route through different pages / views in web development.
+
 Axios is an HTTP client that is used to fetch data from Spotify APIs.
 
 ## OAuth
